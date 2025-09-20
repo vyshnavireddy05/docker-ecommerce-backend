@@ -17,4 +17,4 @@
     
     ENV JAVA_OPTS=""
     EXPOSE 9090
-    ENTRYPOINT ["sh","-c","java $JAVA_OPTS -jar app.jar"]    
+    ENTRYPOINT ["sh","-c","java $JAVA_OPTS -jar app.jar"]  
