@@ -13,8 +13,9 @@
     FROM eclipse-temurin:21-jre-alpine
     WORKDIR /app
     
-    COPY --from=build /app/target/*.jar app.jar
     
+    COPY --from=build /app/target/ecommerce.jar app.jar
+
     ENV JAVA_OPTS=""
     EXPOSE 9090
     ENTRYPOINT ["sh","-c","java $JAVA_OPTS -jar app.jar"]  
